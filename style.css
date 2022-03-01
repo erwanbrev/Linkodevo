@@ -75,11 +75,12 @@ h1 {
 
 footer {
     background: var(--orf);
-    margin-top: 4%;
-    height: 10vh;
+    /* margin-top: 4%; */
+    height: 11vh;
 }
 
 .footfoot {
+    padding: 2%;
     color: var(--wh);
     width: 100%;
     height: 100%;
@@ -115,7 +116,7 @@ footer {
 /* ! 600 x 786 (mobile)*/
 @media screen and (max-width: 600px) {
     .social-media {
-        margin: 17% auto;
+        margin: 16% auto;
         height: 350px;
         width: 300px;
         align-items: center;
