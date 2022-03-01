@@ -120,7 +120,7 @@ footer {
     }
 }
 
-/* ! 600 x 786 (mobile)*/
+/* ! 400 x 786 (mobile)*/
 @media screen and (max-width: 600px) {
     .social-media {
         margin: 14% auto;
@@ -153,5 +153,12 @@ footer {
 
     footer {
         height: 11vh;
+    }
+}
+
+/* ! 400 x 786 (mobile)*/
+@media screen and (min-height: 800px) {
+    .social-media {
+        margin: 19% auto;
     }
 }
