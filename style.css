@@ -1,0 +1,137 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+:root {
+    --wh: #FDFDFD;
+    --bl: #010101;
+    --or: #FF5C00;
+    --ye: #FFF000;
+    --orf: #C64700;
+}
+
+/*! 1440 x 682 */
+body {
+    background: linear-gradient(var(--ye), var(--or)) fixed;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+}
+
+header,
+footer {
+    width: 100vw;
+}
+
+.ID {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ID img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+.social-media {
+    margin: 2.5% auto;
+    width: 350px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    line-height: 50px;
+    border-radius: 10px;
+    background-color: var(--orf);
+}
+
+.social-media a {
+    width: 200px;
+    background: var(--wh);
+    padding: 6%;
+    color: var(--bl);
+    margin: 5% auto;
+    text-decoration: none;
+}
+
+.social-media,
+.social-media a {
+    border-radius: 10px;
+}
+
+footer {
+    background: var(--orf);
+    margin-top: 4%;
+}
+
+.footfoot {
+    color: var(--wh);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    line-height: 35px;
+}
+
+/*! 1440 x 793 (écran plein)*/
+@media screen and (min-height: 793px) {
+    .social-media {
+        margin: 7.1% auto;
+    }
+}
+
+/*! 1440 x 750 (écran splité)*/
+@media screen and (max-width: 750px) {
+    .ID {
+        margin-top: 6%;
+    }
+
+    .ID img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-media {
+        margin: 6.3% auto;
+    }
+}
+
+/* ! 600 x 786 (mobile)*/
+@media screen and (max-width: 600px) {
+    .social-media {
+        margin: 15% auto;
+        height: 360px;
+        width: 300px;
+        align-items: center;
+    }
+
+    .social-media a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+
+    .ID {
+        margin-top: 16%;
+    }
+
+    .ID img {
+        width: 130px;
+        height: 130px;
+    }
+}
