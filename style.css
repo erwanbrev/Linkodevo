@@ -75,8 +75,7 @@ h1 {
 
 footer {
     background: var(--orf);
-    /* margin-top: 4%; */
-    height: 11vh;
+    height: 15vh;
 }
 
 .footfoot {
@@ -111,6 +110,10 @@ footer {
     .social-media {
         margin: 6.3% auto;
     }
+
+    footer {
+        height: 14vh;
+    }
 }
 
 /* ! 600 x 786 (mobile)*/
@@ -139,5 +142,9 @@ footer {
     .ID img {
         width: 130px;
         height: 130px;
+    }
+
+    footer {
+        height: 11vh;
     }
 }
