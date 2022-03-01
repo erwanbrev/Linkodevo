@@ -113,7 +113,7 @@ footer {
 /* ! 600 x 786 (mobile)*/
 @media screen and (max-width: 600px) {
     .social-media {
-        margin: 15% auto;
+        margin: 17% auto;
         height: 360px;
         width: 300px;
         align-items: center;
