@@ -47,6 +47,10 @@ h1 {
     font-size: 200%;
 }
 
+h3 {
+    font-size: 100%;
+}
+
 .social-media {
     margin: 2.5% auto;
     width: 350px;
@@ -119,7 +123,7 @@ footer {
 /* ! 600 x 786 (mobile)*/
 @media screen and (max-width: 600px) {
     .social-media {
-        margin: 16% auto;
+        margin: 14% auto;
         height: 350px;
         width: 300px;
         align-items: center;
@@ -130,13 +134,16 @@ footer {
         justify-content: center;
         align-items: center;
         height: 70px;
-        font-size: 80%;
         margin: 3% auto;
 
     }
 
+    h3 {
+        font-size: 80%;
+    }
+
     .ID {
-        margin-top: 16%;
+        margin-top: 10%;
     }
 
     .ID img {
