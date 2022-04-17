@@ -6,159 +6,127 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-
 :root {
-    --wh: #FDFDFD;
-    --bl: #010101;
-    --or: #FF5C00;
-    --ye: #FFF000;
-    --orf: #C64700;
+    --bgWhiteCase: #FDFDFD;
+    --bgBlackText: #010101;
+    --bgOneLinear: #FF5C00;
+    --bgTwoLinear: #FFF000;
+    --bgFooter: #FF843F;
+    --bgImg: #696969;
 }
 
-/*! 1440 x 682 */
+/*! 1440 x 692 */
 body {
-    background: linear-gradient(var(--ye), var(--or)) fixed;
+    background: linear-gradient(var(--bgTwoLinear), var(--bgOneLinear)) fixed;
     font-family: 'Play', sans-serif;
     font-weight: 400;
+    min-height: 100vh;
+    position: relative;
 }
 
+/* ID */
+#ID {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ID img {
+    border-radius: 50%;
+    width: 7rem;
+    box-shadow: 0 0 1.4em var(--bgImg);
+}
+
+/* Linkodevo */
+h1 {
+    font-size: 180%;
+}
+
+/* Erwan */
+h2 {
+    font-size: 150%;
+    margin-top: 1.4%;
+}
+
+/* Social media */
+h3 {
+    font-size: 100%;
+}
+
+/* ©Copyright */
+h4 {
+    font-size: 80%;
+}
+
+/* CONTAINER */
+#social-media {
+    margin: 1% auto;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+    width: 6rem;
+}
+
+#social-media a {
+    width: 200px;
+    background: var(--bgWhiteCase);
+    padding: 6%;
+    color: var(--bgBlackText);
+    margin: 5% auto;
+    text-decoration: none;
+}
+
+#social-media,
+#social-media a {
+    border-radius: 10px;
+}
+
+/* FOOTER */
 header,
 footer {
     width: 100vw;
 }
 
-.ID {
-    margin-top: 2%;
+footer {
+    background: var(--bgOneLinear);
+    height: 17vh;
+    padding: 28px;
+    color: var(--bgWhiteCase);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-}
-
-.ID img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 1%;
-}
-
-h1 {
-    font-size: 200%;
-}
-
-h3 {
-    font-size: 100%;
-}
-
-.social-media {
-    margin: 2.5% auto;
-    width: 350px;
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    padding: 2%;
-    line-height: 50px;
-    border-radius: 10px;
-    background-color: var(--orf);
-}
-
-.social-media a {
-    width: 200px;
-    background: var(--wh);
-    padding: 6%;
-    color: var(--bl);
-    margin: 5% auto;
-    text-decoration: none;
-}
-
-.social-media,
-.social-media a {
-    border-radius: 10px;
-}
-
-footer {
-    background: var(--orf);
-    height: 15vh;
-}
-
-.footfoot {
-    padding: 1%;
-    color: var(--wh);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
     line-height: 35px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-/*! 1440 x 793 (écran plein)*/
+/*! 1440 x 793 (plein écran)*/
 @media screen and (min-height: 793px) {
-    .social-media {
-        margin: 7.1% auto;
+    #social-media {
+        margin: 3.6% auto;
     }
 }
 
-/*! 1440 x 750 (écran splité)*/
+/*! 750 x 692 (écran splité)*/
 @media screen and (max-width: 750px) {
-    .ID {
-        margin-top: 6%;
-    }
-
-    .ID img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .social-media {
-        margin: 6.3% auto;
-    }
-
-    footer {
-        height: 14vh;
+    #social-media {
+        margin: 3% auto;
     }
 }
 
 /* ! 400 x 786 (mobile)*/
 @media screen and (max-width: 600px) {
-    .social-media {
-        margin: 14% auto;
-        height: 350px;
-        width: 300px;
-        align-items: center;
+    #ID img{
+        margin-top: 8%;
     }
-
-    .social-media a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70px;
-        margin: 3% auto;
-
+    #social-media {
+        margin: 10% auto;
     }
-
-    h3 {
-        font-size: 80%;
-    }
-
-    .ID {
-        margin-top: 10%;
-    }
-
-    .ID img {
-        width: 130px;
-        height: 130px;
-    }
-
-    footer {
-        height: 11vh;
-    }
-}
-
-/* ! 400 x 786 (mobile)*/
-@media screen and (min-height: 800px) {
-    .social-media {
-        margin: 19.5% auto;
+    footer{
+        padding: 34px;
     }
 }
