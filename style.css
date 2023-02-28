@@ -9,10 +9,9 @@
 :root {
     --bgWhiteCase: #FDFDFD;
     --bgBlackText: #010101;
-    --bgOneLinear: #FF5C00;
-    --bgTwoLinear: #FFF000;
-    --bgFooter: #FF843F;
-    --bgImg: #696969;
+    --bgOneLinear: #448EFC;
+    --bgTwoLinear: #38EFFE;
+    ;
 }
 
 /*! 1440 x 692 */
@@ -24,39 +23,32 @@ body {
     position: relative;
 }
 
-/* ID */
+/* Photo de profil */
 #ID img {
-    margin-top: 1.6%;
+    margin: 1.6% auto;
     border-radius: 50%;
-    width: 7rem;
-    box-shadow: 0 0 1.4em var(--bgImg);
+    width: 10em;
 }
 
-/* Linkodevo */
+#ID img,
+#social-media a {
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px, rgba(0, 0, 0, 0.2) -3px -3px 3px;
+}
+
+/* Erwan & copyright/logo */
+h2,
 h1 {
-    font-size: 180%;
+    font-size: 1.6em;
 }
 
-/* Erwan */
-h2 {
-    font-size: 150%;
-    margin-top: 1.4%;
-}
-
-/* Social media */
+/* Social media & ©Copyright */
 h3 {
-    font-size: 100%;
-}
-
-/* ©Copyright */
-h4 {
-    font-size: 80%;
+    font-size: 1em;
 }
 
 /* CONTAINER */
 #social-media {
-    margin: 1% auto 0 auto;
-    /* margin: 1% auto; */
+    margin: 2em auto 11em;
     display: grid;
     justify-content: center;
     text-align: center;
@@ -64,10 +56,10 @@ h4 {
 }
 
 #social-media a {
-    border-radius: 12px;
-    width: 12rem;
+    border-radius: 1.4em;
+    width: 20em;
     background: var(--bgWhiteCase);
-    padding: 2%;
+    padding: .4em;
     color: var(--bgBlackText);
     margin: 5% auto;
     text-decoration: none;
@@ -76,7 +68,7 @@ h4 {
 /* FOOTER */
 header,
 footer {
-    width: 100%;
+    width: 100vw;
 }
 
 #ID,
@@ -87,26 +79,30 @@ footer {
 }
 
 footer {
-    background: var(--bgOneLinear);
     height: 14vh;
     justify-content: center;
     color: var(--bgWhiteCase);
-    line-height: 27px;
-    position: absolute;
-    bottom: 0;
 }
 
-/* @media screen and (max-width:1920px) {
-} */
+/* 360 x 615 (mobile)*/
+@media screen and (max-width: 500px) {
 
-/* ! 400 x 786 (mobile)*/
-@media screen and (max-width: 600px) {
+    /* copyright/logo */
+    h1 {
+        font-size: 1.2em;
+    }
+
     #ID img {
         margin-top: 8%;
+        width: 8em;
     }
 
     #social-media {
-        margin: 3.3rem auto;
+        margin-bottom: 5em;
+    }
+
+    #social-media a {
+        width: 14em;
     }
 
     footer {
